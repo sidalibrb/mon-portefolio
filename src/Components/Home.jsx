@@ -3,7 +3,7 @@
 import { useEffect, useState, useRef } from "react"
 import Header from "./Header"
 import Footer from "./Footer"
-import "./home.css"
+import "./Home.css"
 
 const Home = () => {
   const [isLoaded, setIsLoaded] = useState(false)

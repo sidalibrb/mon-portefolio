@@ -1,7 +1,7 @@
 "use client"
 
 import { useState, useEffect } from "react"
-import "./header.css"
+import "./Header.css"
 
 const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false)

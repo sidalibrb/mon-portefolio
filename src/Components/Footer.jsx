@@ -1,7 +1,7 @@
 "use client"
 
 import { useEffect, useState } from "react"
-import "./footer.css"
+import "./Footer.css"
 
 const Footer = () => {
   const [isVisible, setIsVisible] = useState(false)
