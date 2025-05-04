@@ -1,0 +1,76 @@
+/* Reset CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  font-family: "Poppins", sans-serif;
+  scroll-behavior: smooth;
+  background-color: #0a0a0a;
+  color: #ffffff;
+}
+
+.app {
+  min-height: 100vh;
+  background-color: #0a0a0a;
+}
+
+/* Pour importer une police Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+
+/* Styles pour empêcher le défilement quand le menu mobile est ouvert */
+body.menu-open {
+  overflow: hidden;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+}
+
+/* Styles pour améliorer l'accessibilité sur mobile */
+input,
+textarea,
+button,
+select {
+  font-size: 16px; /* Empêche le zoom automatique sur iOS */
+}
+
+/* Amélioration du tap target size pour mobile */
+a,
+button,
+.menu-toggle,
+.skill,
+.project-tags span {
+  min-height: 44px;
+  min-width: 44px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Fix pour les images sur mobile */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Amélioration de la visibilité du focus pour l'accessibilité */
+a:focus,
+button:focus,
+input:focus,
+textarea:focus {
+  outline: 2px solid #e61919;
+  outline-offset: 2px;
+}
+
+/* Amélioration du contraste pour la lisibilité */
+@media (max-width: 480px) {
+  .hero-content p,
+  .about-text p,
+  .project-info p {
+    color: #e0e0e0;
+  }
+}
