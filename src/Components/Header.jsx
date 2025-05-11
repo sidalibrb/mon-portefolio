@@ -9,6 +9,7 @@ const Header = () => {
 
   const toggleMenu = () => {
     setMenuOpen(!menuOpen)
+    document.body.classList.toggle("menu-open")
   }
 
   useEffect(() => {
@@ -21,10 +22,21 @@ const Header = () => {
     }
 
     window.addEventListener("scroll", handleScroll)
+
+    const handleResize = () => {
+      if (window.innerWidth > 768 && menuOpen) {
+        setMenuOpen(false)
+        document.body.classList.remove("menu-open")
+      }
+    }
+
+    window.addEventListener("resize", handleResize)
+
     return () => {
       window.removeEventListener("scroll", handleScroll)
+      window.removeEventListener("resize", handleResize)
     }
-  }, [])
+  }, [menuOpen])
 
   return (
     <header className={`header ${scrolled ? "scrolled" : ""}`}>
@@ -32,14 +44,6 @@ const Header = () => {
         <h1>
           DEV/<span>SIDALI</span>
         </h1>
-      </div>
-
-      <div className={`menu-toggle ${menuOpen ? "active" : ""}`} onClick={toggleMenu}>
-        <div className="hamburger">
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
       </div>
 
       <nav className={`nav-menu ${menuOpen ? "active" : ""}`}>
@@ -60,9 +64,7 @@ const Header = () => {
             </a>
           </li>
           <li>
-            <a href="#skills" onClick={() => setMenuOpen(false)}>
-              Compétences
-            </a>
+           
           </li>
           <li>
             <a href="#contact" onClick={() => setMenuOpen(false)}>
@@ -71,6 +73,14 @@ const Header = () => {
           </li>
         </ul>
       </nav>
+
+      <div className={`menu-toggle ${menuOpen ? "active" : ""}`} onClick={toggleMenu}>
+        <div className="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
     </header>
   )
 }

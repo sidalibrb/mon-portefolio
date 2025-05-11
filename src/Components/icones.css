@@ -1,0 +1,47 @@
+/* Icônes pour les réseaux sociaux et autres */
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css");
+
+.icon-github:before {
+  content: "\f09b";
+  font-family: "Font Awesome 6 Brands";
+}
+
+.icon-linkedin:before {
+  content: "\f08c";
+  font-family: "Font Awesome 6 Brands";
+}
+
+.icon-instagram:before {
+  content: "\f16d";
+  font-family: "Font Awesome 6 Brands";
+}
+
+.icon-envelope:before {
+  content: "\f0e0";
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
+}
+
+.icon-phone:before {
+  content: "\f095";
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
+}
+
+.icon-map-marker:before {
+  content: "\f3c5";
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
+}
+
+.icon-arrow-up:before {
+  content: "\f062";
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
+}
+
+.icon-video:before {
+  content: "\f03d";
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
+}

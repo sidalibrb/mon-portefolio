@@ -81,15 +81,15 @@ const Home = () => {
           <div className="about-content">
             <div className="about-image">
               <div className="image-container">
-                <div className="profile-placeholder"></div>
+                <img src="/src/assets/me1.jpg" alt="Sidali Bourbala" className="profile-image" />
               </div>
             </div>
             <div className="about-text">
               <h3>Développeur Web Passionné</h3>
               <p>
-                Bienvenue sur mon portfolio ! Je suis bourbala sidali, un développeur web spécialisé dans la création d'applications web
-                modernes et réactives. Avec une solide expérience en développement front-end et back-end, je m'efforce
-                de créer des expériences utilisateur exceptionnelles.
+                Bienvenue sur mon portfolio ! Je suis bourbala sidali, un développeur web spécialisé dans la création
+                d'applications web modernes et réactives. Avec une solide expérience en développement front-end et
+                back-end, je m'efforce de créer des expériences utilisateur exceptionnelles.
               </p>
               <p>
                 Ma passion pour les nouvelles technologies et mon désir constant d'apprendre me permettent de rester à
@@ -99,11 +99,11 @@ const Home = () => {
                 <div className="skill">HTML/CSS</div>
                 <div className="skill">JavaScript</div>
                 <div className="skill">React</div>
-                <div className="skill">Node.js</div>
-                <div className="skill">Express</div>
+                <div className="skill">Laravel</div>
+                <div className="skill">PHP</div>
               </div>
               <a href="/cv.pdf" className="btn btn-primary" download="mon-cv-2025.pdf">
-              Télécharger CV
+                Télécharger CV
               </a>
             </div>
           </div>
@@ -116,40 +116,56 @@ const Home = () => {
           </div>
           <div className="projects-grid">
             <div className="project-card">
-              <div className="project-image"></div>
+              <div className="project-image">
+                <img src="/src/assets/logo.png" alt="Ondefoc" />
+              </div>
               <div className="project-info">
-                <h3>Projet 1</h3>
-                <p>Application web réactive construite avec React et Node.js</p>
+                <h3>ONDEFOC</h3>
+                <p>Application web de Gestion de Stock </p>
                 <div className="project-tags">
                   <span>React</span>
-                  <span>Node.js</span>
-                  <span>MongoDB</span>
+                  <span>Laravel</span>
+                  
+                </div>
+                <div className="project-links">
+                  <a
+                    href="https://drive.google.com/file/d/17nVqZGhis78fVhhSAZZuxdlRkMgOHeVZ/view?usp=sharing"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="project-link"
+                  >
+                    <i className="icon-video"></i> Voir la démo
+                  </a>
+                
                 </div>
               </div>
             </div>
 
-            <div className="project-card">
-              <div className="project-image"></div>
-              <div className="project-info">
-                <h3>Projet 2</h3>
-                <p>Site e-commerce avec système de paiement intégré</p>
-                <div className="project-tags">
-                  <span>React</span>
-                  <span>Express</span>
-                  <span>Stripe</span>
-                </div>
+            <div className>
               </div>
-            </div>
 
             <div className="project-card">
-              <div className="project-image"></div>
-              <div className="project-info">
-                <h3>Projet 3</h3>
-                <p>Application mobile développée avec React Native</p>
+              <div className="project-image">
+                <img src="/src/assets/logo2.png" alt="Projet 3" />
+              </div>
+              <div className="project-info"> 
+                <h3>Pixel </h3>
+                <p>Application mobile développée avec React Native et laravel </p>
                 <div className="project-tags">
-                  <span>React Native</span>
-                  <span>Firebase</span>
-                  <span>Redux</span>
+                  <span>React </span>
+                  <span>Laravel</span>
+                  
+                </div>
+                <div className="project-links">
+                  <a
+                    href="https://drive.google.com/file/d/16TolWP5apc5XXGymJ1bVUBj2TYOJwCei/view?usp=sharing"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="project-link"
+                  >
+                    <i className="icon-video"></i> Voir la démo
+                  </a>
+               
                 </div>
               </div>
             </div>
@@ -181,6 +197,32 @@ const Home = () => {
                   <i className="icon-map-marker"></i>
                   <span>Alger, Algerie</span>
                 </div>
+              </div>
+              <div className="social-links">
+                <a
+                  href="https://github.com/YOUR_USERNAME"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="social-link"
+                >
+                  <i className="icon-github"></i>
+                </a>
+                <a
+                  href="https://linkedin.com/in/YOUR_USERNAME"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="social-link"
+                >
+                  <i className="icon-linkedin"></i>
+                </a>
+                <a
+                  href="https://instagram.com/YOUR_USERNAME"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="social-link"
+                >
+                  <i className="icon-instagram"></i>
+                </a>
               </div>
             </div>
             <div className="contact-form">

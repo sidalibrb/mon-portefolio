@@ -17,14 +17,29 @@ const Footer = () => {
           <h2>À propos</h2>
           <p>Je suis un développeur passionné spécialisé dans la création d'applications web modernes et réactives.</p>
           <div className="social-icons">
-            <a href="#" className="social-icon">
+            <a
+              href="https://github.com/YOUR_USERNAME"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="social-icon"
+            >
               <i className="icon-github"></i>
             </a>
-            <a href="#" className="social-icon">
+            <a
+              href="https://linkedin.com/in/YOUR_USERNAME"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="social-icon"
+            >
               <i className="icon-linkedin"></i>
             </a>
-            <a href="#" className="social-icon">
-              <i className="icon-twitter"></i>
+            <a
+              href="https://instagram.com/YOUR_USERNAME"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="social-icon"
+            >
+              <i className="icon-instagram"></i>
             </a>
           </div>
         </div>
@@ -53,7 +68,7 @@ const Footer = () => {
             <i className="icon-envelope"></i> sidalibourbala@gmail.com
           </p>
           <p>
-            <i className="icon-phone"></i> +213 5 42 32 37 03
+            <i className="icon-phone"></i> +213 542323703
           </p>
           <p>
             <i className="icon-map-marker"></i> Alger, Algerie
@@ -62,7 +77,7 @@ const Footer = () => {
       </div>
 
       <div className="footer-bottom">
-        <p>&copy; {new Date().getFullYear()} DEV/SIDALI. Tous droits réservés.</p>
+        <p>&copy; {new Date().getFullYear()} Sidali Bourbala. Tous droits réservés.</p>
       </div>
 
       <div className="scroll-to-top" onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}>
